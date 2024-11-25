@@ -1,0 +1,129 @@
+date;time;status;reference;description;assetType;type;isin;shares;price;amount;fee;tax;currency
+2024-11-25;21:35:16;Pending;"NHMFWYWNZK3JK7XG";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2024-11-07;13:28:03;Executed;"SCALLwfv46Y62Xq";"VanEck Uranium and Nuclear Technologies (Acc)";Security;Savings plan;IE000M7V94E1;1,566;31,915;-49,97889;0,00;0,00;EUR
+2024-11-06;01:00:00;Executed;"7RLQGOBDVNWFGP6CGFERA";"Scalable Capital Broker piano di accumulo";Cash;Deposit;;;;50,00;0,00;;EUR
+2024-11-01;16:01:52;Executed;"SCAL6A6CihG82rc";"Xtrackers MSCI World ex USA (Acc)";Security;Savings plan;IE0006WW1TQ4;3,367;29,695;-99,983065;0,00;0,00;EUR
+2024-11-01;15:56:18;Executed;"SCALgAbGMyXZwg8";"SPDR MSCI World (Acc)";Security;Savings plan;IE00BFY0GT14;5,785;35,875;-207,536875;0,00;0,00;EUR
+2024-11-01;15:50:42;Executed;"SCALUd1hhpVooCH";"Amundi Stoxx Europe 600 (Acc)";Security;Savings plan;LU0908500753;0,419;238,20;-99,8058;0,00;0,00;EUR
+2024-11-01;15:49:36;Executed;"SCALrDa5Nb9VP6D";"Xtrackers EURO STOXX 50 (Acc)";Security;Savings plan;LU0380865021;0,606;82,42;-49,94652;0,00;0,00;EUR
+2024-11-01;15:33:42;Executed;"SCALQZJRYoay3hb";"SPDR MSCI ACWI (Acc)";Security;Savings plan;IE00B44Z5B48;0,462;216,05;-99,8151;0,00;0,00;EUR
+2024-11-01;15:21:32;Executed;"SCALgopkN7UFrbK";"iShares FTSE MIB (Acc)";Security;Savings plan;IE00B53L4X51;0,821;158,28;-129,94788;0,00;0,00;EUR
+2024-10-31;17:55:43;Executed;"SCALtHk9PaC2fa6";"Vanguard LifeStrategy 80% Equity (Acc)";Security;Buy;IE00BMVB5R75;6;35,015;-210,09;0,99;0,00;EUR
+2024-10-31;17:54:52;Cancelled;"SCALzgPazeWBzvf";"Vanguard LifeStrategy 80% Equity (Acc)";Security;Buy;IE00BMVB5R75;0;0,00;0,00;0,00;0,00;EUR
+2024-10-31;01:00:00;Executed;"JSOU7GEBHXJMJF5CRC4YRB";"Scalable Capital Broker piano di accumulo";Cash;Deposit;;;;100,00;0,00;;EUR
+2024-10-28;09:54:03;Executed;"SCALfX89w9QMniZ";"Unipol Gruppo";Security;Buy;IT0004810054;10;11,65;-116,50;0,99;0,12;EUR
+2024-10-28;09:22:55;Executed;"SCALTqrRFA1Yoju";"WisdomTree Megatrends  (Acc)";Security;Sell;IE0000902GT6;18,845;27,01;509,00345;0,99;0,00;EUR
+2024-10-24;02:00:00;Executed;"945445614";"Investimenti";Cash;Deposit;;;;410,00;0,00;;EUR
+2024-10-01;17:17:17;Executed;"SCALririTowCFnB";"SPDR MSCI World (Acc)";Security;Savings plan;IE00BFY0GT14;5,896;35,14;-207,18544;0,00;0,00;EUR
+2024-10-01;17:15:35;Executed;"SCALCS9CP8rQmB8";"iShares Diversified Commodity Swap USD (Acc)";Security;Savings plan;IE00BDFL4P12;4,005;6,327;-25,339635;0,00;0,00;EUR
+2024-10-01;17:07:27;Executed;"SCALu432YevP6A9";"Amundi Stoxx Europe 600 (Acc)";Security;Savings plan;LU0908500753;0,212;242,45;-51,3994;0,00;0,00;EUR
+2024-10-01;16:31:32;Executed;"SCALEpcPG4DYinW";"iShares Core Global Aggregate Bond USD Hedged (Acc)";Security;Savings plan;IE00BZ043R46;10,061;5,08;-51,10988;0,00;0,00;EUR
+2024-09-30;02:00:00;Executed;"52024003";"KKT-Abschluss";Cash;Interest;;;;0,10;0,00;;EUR
+2024-09-25;02:00:00;Executed;"943734960";"Investimenti";Cash;Deposit;;;;310,00;0,00;;EUR
+2024-07-22;02:00:00;Executed;"bqsms90000000001";"Bonus Invita un Amico(a)";Cash;Deposit;;;;25,00;0,00;;EUR
+2024-07-01;11:54:41;Executed;"SCALZ3Sy7DxxQrt";"iShares Core S&P 500 (Acc)";Security;Savings plan;IE00B5BMR087;0,192;536,80;-103,0656;0,00;0,00;EUR
+2024-07-01;11:42:31;Executed;"SCALSYU8aSPB9qV";"WisdomTree Megatrends  (Acc)";Security;Savings plan;IE0000902GT6;1,918;26,165;-50,18447;0,00;0,00;EUR
+2024-07-01;11:42:06;Executed;"SCALBzeoGt6PxHw";"SPDR MSCI World (Acc)";Security;Savings plan;IE00BFY0GT14;5,991;34,53;-206,86923;0,00;0,00;EUR
+2024-07-01;11:40:56;Executed;"SCALGZY7E75ETF2";"Amundi Stoxx Europe 600 (Acc)";Security;Savings plan;LU0908500753;0,215;238,35;-51,24525;0,00;0,00;EUR
+2024-07-01;11:39:17;Executed;"SCALZYQnJ3ed8Tm";"Vanguard LifeStrategy 80% Equity (Acc)";Security;Savings plan;IE00BMVB5R75;3,034;33,915;-102,89811;0,00;0,00;EUR
+2024-07-01;11:31:03;Executed;"SCALUJoRPT521LW";"iShares Core Global Aggregate Bond USD Hedged (Acc)";Security;Savings plan;IE00BZ043R46;10,231;4,9875;-51,0271125;0,00;0,00;EUR
+2024-07-01;11:23:33;Executed;"SCALuM49owScLGU";"iShares Diversified Commodity Swap USD (Acc)";Security;Savings plan;IE00BDFL4P12;3,953;6,40;-25,2992;0,00;0,00;EUR
+2024-06-28;02:00:00;Executed;"52024002";"KKT-Abschluss";Cash;Interest;;;;0,50;0,00;;EUR
+2024-06-14;02:00:00;Executed;"939209096";"Investimenti";Cash;Deposit;;;;590,00;0,00;;EUR
+2024-06-03;11:51:57;Executed;"SCALMK2darwUJot";"SPDR MSCI World (Acc)";Security;Savings plan;IE00BFY0GT14;6,152;33,57;-206,52264;0,00;0,00;EUR
+2024-05-02;11:14:52;Executed;"SCALtdXLivdZ6h6";"SPDR MSCI World (Acc)";Security;Savings plan;IE00BFY0GT14;6,348;32,48;-206,18304;0,00;0,00;EUR
+2024-04-30;02:00:00;Executed;"DJWR62SC8IMGVYJHJQKRDX";"Scalable Capital Broker piano di accumulo";Cash;Deposit;;;;206,19;0,00;;EUR
+2024-04-29;02:00:00;Executed;"937190442";"Investimenti";Cash;Deposit;;;;210,00;0,00;;EUR
+2024-04-02;11:39:17;Executed;"SCAL7mFp7DML5LR";"SPDR MSCI World (Acc)";Security;Savings plan;IE00BFY0GT14;6,152;33,46;-205,84592;0,00;0,00;EUR
+2024-03-28;01:00:00;Executed;"52024001";"KKT-Abschluss";Cash;Interest;;;;3,07;0,00;;EUR
+2024-03-26;01:00:00;Executed;"935479056";"Investimenti";Cash;Deposit;;;;180,00;0,00;;EUR
+2024-03-06;01:00:00;Executed;"GFNSZA2WYTSO4E3BUFMAQU";"Scalable Capital Broker prelievo";Cash;Withdrawal;;;;-200,00;0,00;;EUR
+2024-03-01;15:02:24;Executed;"SCALjWAde6cPCgP";"AMUNDI STOXX EUROPE 600 UCITS ETF ACC";Security;Savings plan;LU0908500753;0,226;225,90;-51,0534;0,00;0,00;EUR
+2024-03-01;14:50:38;Executed;"SCALDHt14y5Bqjs";"Vanguard Funds PLC - Vanguard LifeStrategy® 80 Equity UCITS ETF - (EUR) Accumulating";Security;Savings plan;IE00BMVB5R75;3,183;32,20;-102,4926;0,00;0,00;EUR
+2024-03-01;14:43:14;Executed;"SCALcj6FZ2d28Y1";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,207;494,84;-102,43188;0,00;0,00;EUR
+2024-03-01;14:20:01;Executed;"SCALNEHRXe1KCYJ";"WisdomTree Megatrends UCITS ETF - USD Acc";Security;Savings plan;IE0000902GT6;1,927;25,945;-49,996015;0,00;0,00;EUR
+2024-03-01;14:19:45;Executed;"SCALwMEwitTGY6M";"iShares Diversified Commodity Swap UCITS ETF USD (Acc) Class - Acc";Security;Savings plan;IE00BDFL4P12;4,199;6,001;-25,198199;0,00;0,00;EUR
+2024-03-01;14:13:33;Executed;"SCALv8Bqr6eaCHW";"SPDR MSCI World UCITS ETF";Security;Savings plan;IE00BFY0GT14;6,343;32,315;-204,974045;0,00;0,00;EUR
+2024-03-01;14:12:31;Executed;"SCALbqPxZqXNHhn";"iShares Core Global Aggregate Bond USD Hedged (Acc)";Security;Savings plan;IE00BZ043R46;10,32;4,924;-50,81568;0,00;0,00;EUR
+2024-02-28;01:00:00;Executed;"OHXR8ZNIQLCO33LX";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2024-02-14;20:38:25;Executed;"SCALGw8tjkKBV2Y";"Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C";Security;Sell;IE00BGV5VN51;3,194;111,72;356,83368;0,00;0,00;EUR
+2024-02-14;17:29:14;Executed;"SCALM98hcWHphMP";"iShares Blockchain Technology UCITS ETF USD (Acc)";Security;Sell;IE000RDRMSD1;3,283;10,10;33,1583;0,99;0,00;EUR
+2024-02-14;17:16:47;Executed;"SCAL7sdc6W6hzzT";"WisdomTree Megatrends UCITS ETF - USD Acc";Security;Buy;IE0000902GT6;15;25,725;-385,875;0,00;0,00;EUR
+2024-02-14;12:31:54;Executed;"SCALfk2EjdMnAf5";"SPDR MSCI World UCITS ETF";Security;Buy;IE00BFY0GT14;45;31,718;-1.427,31;0,00;0,00;EUR
+2024-02-14;12:30:23;Executed;"SCALcd89e1nZeum";"iShares Core MSCI World UCITS ETF";Security;Sell;IE00B4L5Y983;16,532;87,05;1.439,1106;0,00;0,00;EUR
+2024-02-12;01:00:00;Executed;"933897367";"Investimenti";Cash;Deposit;;;;800,00;0,00;;EUR
+2024-02-01;14:26:56;Executed;"SCALNDWYNiwhRkW";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,217;472,18;-102,46306;0,00;0,00;EUR
+2024-02-01;14:21:31;Executed;"SCALUQNauTtqi5R";"iShares Core Global Aggregate Bond USD Hedged (Acc)";Security;Savings plan;IE00BZ043R46;10,2;4,9615;-50,6073;0,00;0,00;EUR
+2024-02-01;14:16:33;Executed;"SCALNrtBaNy9XfY";"Vanguard Funds PLC - Vanguard LifeStrategy® 80 Equity UCITS ETF - (EUR) Accumulating";Security;Savings plan;IE00BMVB5R75;3,267;31,245;-102,077415;0,00;0,00;EUR
+2024-02-01;14:10:18;Executed;"SCALXcW7vQoZmGW";"iShares Diversified Commodity Swap UCITS ETF USD (Acc) Class - Acc";Security;Savings plan;IE00BDFL4P12;4,141;6,061;-25,098601;0,00;0,00;EUR
+2024-02-01;13:54:09;Executed;"SCALtbqmuniBzFX";"iShares Core MSCI World UCITS ETF";Security;Savings plan;IE00B4L5Y983;2,401;85,036;-204,171436;0,00;0,00;EUR
+2024-02-01;13:45:10;Executed;"SCALXJNubxAXYeo";"Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C";Security;Savings plan;IE00BGV5VN51;0,475;107,28;-50,958;0,00;0,00;EUR
+2024-02-01;13:38:33;Executed;"SCALPRmLVQqUwhf";"iShares Blockchain Technology UCITS ETF USD (Acc)";Security;Savings plan;IE000RDRMSD1;3,283;7,614;-24,996762;0,00;0,00;EUR
+2024-02-01;13:37:41;Executed;"SCALtaUw1WaDuXv";"Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc";Security;Savings plan;LU0908500753;0,231;220,80;-51,0048;0,00;0,00;EUR
+2024-01-29;01:00:00;Executed;"WAYPKD6SFJHUXUPS";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2024-01-02;11:52:51;Executed;"SCALWPVG9cFsACP";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,224;454,57;-101,82368;0,00;0,00;EUR
+2024-01-02;11:48:09;Executed;"SCAL5g8ktE1Vfci";"Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C";Security;Savings plan;IE00BGV5VN51;0,506;100,38;-50,79228;0,00;0,00;EUR
+2024-01-02;11:40:01;Executed;"SCALFfjMreykBUD";"iShares Core Global Aggregate Bond USD Hedged (Acc)";Security;Savings plan;IE00BZ043R46;10,357;4,866;-50,397162;0,00;0,00;EUR
+2024-01-02;11:31:57;Executed;"SCALE5u3RBa5VVr";"iShares Core MSCI World UCITS ETF";Security;Savings plan;IE00B4L5Y983;2,467;82,41;-203,30547;0,00;0,00;EUR
+2024-01-02;11:24:32;Executed;"SCALnXDP7ai2TxG";"Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc";Security;Savings plan;LU0908500753;0,232;218,50;-50,692;0,00;0,00;EUR
+2024-01-02;11:20:26;Executed;"SCALHbAau3GLHi9";"Vanguard Funds PLC - Vanguard LifeStrategy® 80 Equity UCITS ETF - (EUR) Accumulating";Security;Savings plan;IE00BMVB5R75;3,326;30,565;-101,65919;0,00;0,00;EUR
+2024-01-02;11:08:01;Executed;"SCAL77vSbtvX9YZ";"iShares FTSE MIB UCITS ETF EUR (Acc)";Security;Savings plan;IE00B53L4X51;0,186;134,94;-25,09884;0,00;0,00;EUR
+2024-01-02;11:03:44;Executed;"SCALpVsc6AeNuX6";"iShares Diversified Commodity Swap UCITS ETF USD (Acc) Class - Acc";Security;Savings plan;IE00BDFL4P12;4,157;6,013;-24,996041;0,00;0,00;EUR
+2023-12-29;01:00:00;Executed;"52023003";"KKT-Abschluss";Cash;Interest;;;;4,66;0,00;;EUR
+2023-12-29;01:00:00;Executed;"931718698";"Investimenti";Cash;Deposit;;;;560,00;0,00;;EUR
+2023-12-28;01:00:00;Executed;"KWG7X36T2ZDB4BMH";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2023-12-04;01:00:00;Executed;"930848351";"Investimenti";Cash;Deposit;;;;550,00;0,00;;EUR
+2023-12-01;14:56:21;Executed;"SCALY6GDNTUTTsm";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,231;439,63;-101,55453;0,00;0,00;EUR
+2023-12-01;14:52:32;Executed;"SCALYyapedKwpGh";"Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C";Security;Savings plan;IE00BGV5VN51;0,524;96,56;-50,59744;0,00;0,00;EUR
+2023-12-01;14:35:42;Executed;"SCALGEKqFBCMrcc";"Vanguard Funds PLC - Vanguard LifeStrategy® 80 Equity UCITS ETF - (EUR) Accumulating";Security;Savings plan;IE00BMVB5R75;3,424;29,565;-101,23056;0,00;0,00;EUR
+2023-12-01;14:32:14;Executed;"SCAL6y3358CDgv1";"Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc";Security;Savings plan;LU0908500753;0,24;210,65;-50,556;0,00;0,00;EUR
+2023-12-01;14:30:01;Executed;"SCALMcsQdU2xV7j";"iShares FTSE MIB UCITS ETF EUR (Acc)";Security;Savings plan;IE00B53L4X51;0,19;131,26;-24,9394;0,00;0,00;EUR
+2023-12-01;14:28:22;Executed;"SCALF1UKyGgePNq";"iShares Diversified Commodity Swap UCITS ETF USD (Acc) Class - Acc";Security;Savings plan;IE00BDFL4P12;8,13;6,174;-50,19462;0,00;0,00;EUR
+2023-12-01;14:27:11;Executed;"SCALj6APy78hDdm";"iShares Core Global Aggregate Bond USD Hedged (Acc)";Security;Savings plan;IE00BZ043R46;10,473;4,793;-50,197089;0,00;0,00;EUR
+2023-12-01;14:24:45;Executed;"SCAL2wE36rjchVC";"iShares Core MSCI World UCITS ETF";Security;Savings plan;IE00B4L5Y983;2,55;79,41;-202,4955;0,00;0,00;EUR
+2023-11-28;01:00:00;Executed;"IV5OKXVGXWYPRBF5";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2023-11-03;12:52:07;Executed;"SCALWx7XUisYi6x";"Intesa Sanpaolo SpA";Security;Sell;IT0000072618;22;2,572;56,584;0,99;0,00;EUR
+2023-11-01;11:43:34;Executed;"SCAL7XDPKjm7FsJ";"Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C";Security;Savings plan;IE00BGV5VN51;0,575;87,57;-50,35275;0,00;0,00;EUR
+2023-11-01;11:39:32;Executed;"SCALoqWPGV4V7k1";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,244;414,45;-101,1258;0,00;0,00;EUR
+2023-11-01;11:27:44;Executed;"SCALKUEga1rQEzV";"iShares Diversified Commodity Swap UCITS ETF USD (Acc) Class - Acc";Security;Savings plan;IE00BDFL4P12;7,651;6,535;-49,999285;0,00;0,00;EUR
+2023-11-01;11:16:01;Executed;"SCALsJbuLAKuXYh";"iShares Core Global Aggregate Bond USD Hedged (Acc)";Security;Savings plan;IE00BZ043R46;10,489;4,7665;-49,9958185;0,00;0,00;EUR
+2023-11-01;11:13:38;Executed;"SCALeVmzwGCWbYV";"Vanguard Funds PLC - Vanguard LifeStrategy® 80 Equity UCITS ETF - (EUR) Accumulating";Security;Savings plan;IE00BMVB5R75;3,593;28,055;-100,801615;0,00;0,00;EUR
+2023-11-01;11:10:41;Executed;"SCALmL8qTkox9Rh";"iShares Core MSCI World UCITS ETF";Security;Savings plan;IE00B4L5Y983;2,694;74,85;-201,6459;0,00;0,00;EUR
+2023-11-01;11:04:30;Executed;"SCALX1eirj917wf";"Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc";Security;Savings plan;LU0908500753;0,256;196,56;-50,31936;0,00;0,00;EUR
+2023-10-27;02:00:00;Executed;"7DZ2GTJU627ANELB";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2023-10-25;02:00:00;Executed;"929324220";"Investimenti Scalable";Cash;Deposit;;;;1.000,00;0,00;;EUR
+2023-10-09;02:00:00;Executed;"CANCEL-52023001";"STORNO KKT-Abschluss";Cash;Interest;;;;-3,08;0,00;;EUR
+2023-10-09;02:00:00;Executed;"52023002";"KKT-Abschluss";Cash;Interest;;;;3,10;0,00;;EUR
+2023-10-02;11:34:55;Executed;"SCAL3zYKJhzHvyE";"Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C";Security;Savings plan;IE00BGV5VN51;0,564;88,87;-50,12268;0,00;0,00;EUR
+2023-10-02;11:28:54;Executed;"SCALRsJeLLpyR2d";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,236;427,00;-100,772;0,00;0,00;EUR
+2023-10-02;11:23:28;Executed;"SCALoeNeRgxfSQE";"iShares Core MSCI World UCITS ETF";Security;Savings plan;IE00B4L5Y983;2,598;77,278;-200,768244;0,00;0,00;EUR
+2023-10-02;11:11:40;Executed;"SCALqbsUqesyuxy";"Vanguard Funds PLC - Vanguard LifeStrategy® 80 Equity UCITS ETF - (EUR) Accumulating";Security;Savings plan;IE00BMVB5R75;3,478;28,87;-100,40986;0,00;0,00;EUR
+2023-10-02;11:08:05;Executed;"SCALvwzpDDaQEQw";"Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc";Security;Savings plan;LU0908500753;0,246;203,70;-50,1102;0,00;0,00;EUR
+2023-09-29;02:00:00;Executed;"928242164";"Investimenti Scalable";Cash;Deposit;;;;300,00;0,00;;EUR
+2023-09-29;02:00:00;Executed;"64HCY3GEYOHEBYBNRHEZCB";"Scalable Capital Broker 4x piano diaccumulo";Cash;Deposit;;;;301,63;0,00;;EUR
+2023-09-28;02:00:00;Executed;"52023001";"KKT-Abschluss";Cash;Interest;;;;3,08;0,00;;EUR
+2023-09-27;02:00:00;Executed;"E0H5BJ9H8WXRLHFW";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2023-09-01;11:37:09;Executed;"SCALH5rzzCoWCVE";"iShares Core MSCI World UCITS ETF";Security;Savings plan;IE00B4L5Y983;2,54;78,72;-199,9488;0,00;0,00;EUR
+2023-09-01;11:36:28;Executed;"SCAL3PfSbMeTHxb";"Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C";Security;Savings plan;IE00BGV5VN51;0,55;90,77;-49,9235;0,00;0,00;EUR
+2023-09-01;11:29:42;Executed;"SCALt1sTbZY6BRj";"Vanguard Funds PLC - Vanguard LifeStrategy® 80 Equity UCITS ETF - (EUR) Accumulating";Security;Savings plan;IE00BMVB5R75;3,404;29,37;-99,97548;0,00;0,00;EUR
+2023-09-01;11:26:10;Executed;"SCAL7Pw93fB6EPB";"Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc";Security;Savings plan;LU0908500753;0,239;208,35;-49,79565;0,00;0,00;EUR
+2023-09-01;11:19:54;Executed;"SCALxKXwoLgbKMt";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,23;435,36;-100,1328;0,00;0,00;EUR
+2023-08-28;02:00:00;Executed;"K2IGZ6GUM7WRR0PH";"Abbonamento PRIME+";Cash;Fee;;;;-4,99;0,00;;EUR
+2023-08-22;02:00:00;Executed;"4UNZ8XJAZB67W8ZOETS1EF";"Scalable Capital Broker prelievo";Cash;Withdrawal;;;;-1.500,00;0,00;;EUR
+2023-08-21;13:22:34;Executed;"SCALW1mvKcD4sx3";"Bper Banca";Security;Sell;IT0000066123;20;2,78;55,60;0,99;0,00;EUR
+2023-08-21;09:37:55;Executed;"SCAL88u7td9zv1g";"iShares Core MSCI EM IMI UCITS ETF USD (Acc)";Security;Sell;IE00BKM4GZ66;1,752;27,229;47,705208;0,99;0,00;EUR
+2023-08-11;02:00:00;Executed;"926889420";"INVESTIMENTI";Cash;Deposit;;;;2.000,00;0,00;;EUR
+2023-08-10;15:05:08;Executed;"SCALnLsXbdsVd4r";"iShares Global Govt Bond UCITS ETF USD (Dist)";Security;Sell;IE00B3F81K65;0,608;82,246;50,005568;0,99;0,00;EUR
+2023-08-09;09:29:58;Executed;"SCALc8s14qhgN1J";"Invesco Bloomberg Commodity UCITS ETF";Security;Sell;IE00BF4J0300;1,022;48,865;49,94003;0,99;0,00;EUR
+2023-08-08;16:40:25;Executed;"SCALwBi8EPVsS9s";"Bper Banca";Security;Buy;IT0000066123;20;2,54;-50,80;0,99;0,05;EUR
+2023-08-08;16:39:23;Executed;"SCAL9YQEJcaqiPD";"Intesa Sanpaolo SpA";Security;Buy;IT0000072618;22;2,337;-51,414;0,99;0,05;EUR
+2023-08-04;12:00:57;Executed;"SCAL3fG3sJQ88ry";"iShares Core S&P 500 UCITS ETF";Security;Savings plan;IE00B5BMR087;0,232;430,43;-99,85976;0,00;0,00;EUR
+2023-08-04;11:51:46;Executed;"SCALMqRxLPTAnbV";"iShares Core MSCI World UCITS ETF";Security;Savings plan;IE00B4L5Y983;1,282;77,974;-99,962668;0,00;0,00;EUR
+2023-08-04;11:51:31;Executed;"SCALhqtWXZ5JXDh";"Invesco Bloomberg Commodity UCITS ETF";Security;Savings plan;IE00BF4J0300;1,022;48,895;-49,97069;0,00;0,00;EUR
+2023-08-04;11:28:37;Executed;"SCALP6etF6q4w1m";"Lyxor Core STOXX Europe 600 (DR) - UCITS ETF Acc";Security;Savings plan;LU0908500753;0,24;207,55;-49,812;0,00;0,00;EUR
+2023-08-04;11:27:49;Executed;"SCALYXyGvz6xAyX";"iShares Core MSCI EM IMI UCITS ETF USD (Acc)";Security;Savings plan;IE00BKM4GZ66;1,752;28,532;-49,988064;0,00;0,00;EUR
+2023-08-04;11:23:02;Executed;"SCALssaMfe3HqoZ";"iShares Global Govt Bond UCITS ETF USD (Dist)";Security;Savings plan;IE00B3F81K65;0,608;82,144;-49,943552;0,00;0,00;EUR
+2023-08-03;02:00:00;Executed;"926663875";"Gutschrift";Cash;Deposit;;;;20,00;0,00;;EUR
+2023-08-03;02:00:00;Executed;"PFMGT9XHYUQQ7GNDDP4VSA";"Scalable Capital Broker piano di risparmio";Cash;Deposit;;;;100,00;0,00;;EUR
+2023-07-31;02:00:00;Executed;"ACRSQBESHM5YJ7GNQSR6JV";"Scalable Capital Broker primo deposito";Cash;Deposit;;;;1,00;0,00;;EUR
+2023-07-31;02:00:00;Executed;"926339609";"Gutschrift";Cash;Deposit;;;;400,00;0,00;;EUR
