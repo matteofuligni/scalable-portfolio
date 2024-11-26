@@ -1,2 +1,2 @@
 # Scalable Portfolio
-Analyze portfolio through scalable output csv
+Analyze portfolio through scalable csv output 
