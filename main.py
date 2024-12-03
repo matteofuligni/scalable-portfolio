@@ -1,16 +1,29 @@
-from utils import load_transaction_data, get_unique_isin, get_positions, format_table, compute_total_portfolio
+from utils import load_transaction_data, get_unique_isin, get_positions, format_table, compute_total_portfolio, load_isin_ticker_data, TwoWayDict
 import utils
 import os
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-dataFile = os.path.join(base_dir, "data", "Transactions.csv")
-dataTable = load_transaction_data(dataFile)
-isins = get_unique_isin(dataTable)
+transaction_file = os.path.join(base_dir, "data", "Transactions.csv")
+isin_ticker_file = os.path.join(base_dir, "data", "ISINdatabase.csv")
 
-positions = get_positions(dataTable)
-total = compute_total_portfolio(positions)
-positions = format_table(positions)
+transaction_data = load_transaction_data(transaction_file)
+isin_ticker_data = load_isin_ticker_data(isin_ticker_file)
+#print(df)
+isins = get_unique_isin(transaction_data)
+
+positions = get_positions(transaction_data)
+#total = compute_total_portfolio(positions)
+#print(positions['Avg Price'].sum())
+#positions = format_table(positions)
 
 print(positions)
-print('Valore totale: ', total)
+print(isin_ticker_data.head())
+
+isin_ticker_dict = TwoWayDict()
+isin_ticker_dict.populate_dict(isin_ticker_data, isins)
+
+for isin in isins:
+    print(isin_ticker_dict.get(isin))
+    
+
