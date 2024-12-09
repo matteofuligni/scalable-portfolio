@@ -1,6 +1,11 @@
 from utils import load_transaction_data, get_unique_isin, get_positions, format_table, compute_total_portfolio, load_isin_ticker_data, TwoWayDict
+from utils import get_data_from_yahoo
 import utils
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+alpha_vantage_key = os.getenv("ALPHA_VANTAGE_KEY")
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -25,5 +30,6 @@ isin_ticker_dict.populate_dict(isin_ticker_data, isins)
 
 for isin in isins:
     print(isin_ticker_dict.get(isin))
-    
+    dat = get_data_from_yahoo(isin, period='1mo')
+    print(dat)
 

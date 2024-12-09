@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import requests
+import os
+import yfinance as yf
 
 def load_transaction_data(path):
     """
@@ -129,8 +131,5 @@ def compute_total_portfolio(df):
     total_position = (df['Total Shares']*df['Avg Price']).sum()
     return total_position 
 
-def get_data_from_alpha(isin):
-    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=demo'
-    r = requests.get(url)
-    data = r.json()
-    return data
+def get_data_from_yahoo(isin, period):
+    return yf.download(isin, period=period)
