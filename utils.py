@@ -3,6 +3,8 @@ import numpy as np
 import requests
 import os
 import yfinance as yf
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime
 
 def load_transaction_data(path):
     """
@@ -131,5 +133,136 @@ def compute_total_portfolio(df):
     total_position = (df['Total Shares']*df['Avg Price']).sum()
     return total_position 
 
-def get_data_from_yahoo(isin, period):
-    return yf.download(isin, period=period)
+def get_data_from_yahoo(ticker, check, interval='1d', period='1y'):
+    """
+    Check if the data is already present in the csv file, if not download the data from yahoo fiance and save it in the csv file.
+    If present, download only the missing data from the last date presenti in the csv file.
+
+    Args:
+        isin (str): _description_
+        interval (str): _description_
+        period (str): _description_
+    
+    Returns:
+        dataFrame: _description_
+    """
+    if check:
+        path = os.path.join('data', 'historic_data', ticker, interval)
+        existing_data = load_data_from_csv(path)
+        today_date = datetime.today().strftime('%Y-%m-%d')
+        last_date = pd.to_datetime(existing_data['Date']).max()
+        if today_date > last_date:
+            delta = datetime.today() - last_date
+            delta = delta.days
+            if delta//30 > 0 and delta//365 == 0:
+                period = '1y'
+            elif delta//365 > 0 and delta//365*10 == 0:
+                period = '10y'
+            elif delta//365*10 > 0:
+                period = '20y'
+            else:
+                period = '30y'
+            new_data = yf.download(ticker, interval=interval, period=period)
+        new_data = new_data[new_data.index > last_date]
+        if not new_data.empty:
+            df = pd.concat([existing_data, new_data])
+        else:
+            df = existing_data
+    else:
+        return yf.download(ticker, interval=interval, period=period)
+
+
+def save_data_to_csv(df, path):
+    """
+    Aggiungere il controllo dei dati presenti e fino a che data.
+    Se si stanno scaricando dati giornalieri, controllare se i dati sono già presenti e scaricare solo i dati mancanti più recenti a partire dall'ultimo giorno presente.
+    Stessa cosa per i dati mensili e annuali.
+    
+    Args:
+        df (pd.DataFrame): DataFrame contenente i dati storici.
+        interval (str): Intervallo di tempo dei dati (es. '1d', '1mo', '1y').
+        path (str): Percorso del file CSV dove salvare i dati.
+    """
+    if os.path.exists(path):
+        today_date = datetime.today().strftime('%Y-%m-%d')
+        existing_data = pd.read_csv(path, sep=';', decimal=',')
+        last_date = pd.to_datetime(existing_data['Date']).max()
+        if today_date > last_date:
+            new_data = df[df.index > last_date]
+            
+            
+        else:
+            raise ValueError("The DataFrame does not contain a 'Date' column.")
+        if not new_data.empty:
+            df = pd.concat([existing_data, new_data])
+        else:
+            print(f"Nessun nuovo dato da aggiungere per {path}")
+    else:
+        print(f"Nessun dato esistente trovato per {path}. Creazione di un nuovo file.")
+    
+    
+    df.to_csv(path, sep=';', decimal=',', index=False)
+
+
+def check_if_path_exists(path):
+    """_summary_
+    check if path exists, if not create it
+    
+    Args: path (str): directory path
+    """
+    if not os.path.exists(path):
+        os.makedirs(path, exist_ok=True)
+        print(f'Path {path} created')
+    else:
+        print(f'Path {path} already exists')
+    
+def load_data_from_csv(path):
+    """_summary_
+    
+    Args:
+        path (_type_): _description_
+    
+    Returns:
+        _type_: _description_
+    """
+    return pd.read_csv(path, sep=';', decimal=',')
+    
+    
+def download_data(tickers, interval, period):
+    """_summary_
+    
+    Args:
+        tickers (str): _description_
+        interval (str): _description_
+        period (str): _description_
+    
+    Returns:
+        _type_: _description_
+    """
+    def process_ticker(ticker):
+        path = os.path.join('data', 'historic_data', ticker, interval)
+        check_if_path_exists(path)
+        check_if_data_exists(ticker, interval, period)
+        data = get_data_from_yahoo(ticker, interval, period)
+        save_data_to_csv(data, path)
+
+    with ThreadPoolExecutor() as executor:
+        executor.map(process_ticker, tickers)
+    
+    return 
+
+def check_if_data_exists(ticker, interval, period):
+    """_summary_
+    
+    Args:
+        tickers (str): _description_
+        interval (str): _description_
+    
+    Returns:
+        bool: _description_
+    """
+
+    path = os.path.join('data', 'historic_data', ticker, interval, f"{ticker}.csv")
+    if not os.path.exists(path):
+        return False
+    return True

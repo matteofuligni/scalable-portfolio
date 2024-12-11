@@ -4,32 +4,38 @@ import utils
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-alpha_vantage_key = os.getenv("ALPHA_VANTAGE_KEY")
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
+def main():
+    load_dotenv()
+    alpha_vantage_key = os.getenv("ALPHA_VANTAGE_KEY")
 
-transaction_file = os.path.join(base_dir, "data", "Transactions.csv")
-isin_ticker_file = os.path.join(base_dir, "data", "ISINdatabase.csv")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
 
-transaction_data = load_transaction_data(transaction_file)
-isin_ticker_data = load_isin_ticker_data(isin_ticker_file)
-#print(df)
-isins = get_unique_isin(transaction_data)
+    transaction_file = os.path.join(base_dir, "data", "Transactions.csv")
+    isin_ticker_file = os.path.join(base_dir, "data", "ISINdatabase.csv")
 
-positions = get_positions(transaction_data)
-#total = compute_total_portfolio(positions)
-#print(positions['Avg Price'].sum())
-#positions = format_table(positions)
+    transaction_data = load_transaction_data(transaction_file)
+    isin_ticker_data = load_isin_ticker_data(isin_ticker_file)
+    #print(df)
+    isins = get_unique_isin(transaction_data)
 
-print(positions)
-print(isin_ticker_data.head())
+    positions = get_positions(transaction_data)
+    #total = compute_total_portfolio(positions)
+    #print(positions['Avg Price'].sum())
+    #positions = format_table(positions)
 
-isin_ticker_dict = TwoWayDict()
-isin_ticker_dict.populate_dict(isin_ticker_data, isins)
+    print(positions)
+    print(isin_ticker_data.head())
 
-for isin in isins:
-    print(isin_ticker_dict.get(isin))
-    dat = get_data_from_yahoo(isin, period='1mo')
-    print(dat)
+    isin_ticker_dict = TwoWayDict()
+    isin_ticker_dict.populate_dict(isin_ticker_data, isins)
+
+    for isin in isins:
+        ticker = isin_ticker_dict.get(isin)
+        dat = get_data_from_yahoo(ticker, period='1mo')
+        print(dat.head())
+    
+    
+if __name__ == "__main__":
+    main()
 
