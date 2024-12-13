@@ -1,5 +1,5 @@
 from utils import load_transaction_data, get_unique_isin, get_positions, format_table, compute_total_portfolio, load_isin_ticker_data, TwoWayDict
-from utils import get_data_from_yahoo
+from utils import download_data
 import utils
 import os
 from dotenv import load_dotenv
@@ -30,10 +30,10 @@ def main():
     isin_ticker_dict = TwoWayDict()
     isin_ticker_dict.populate_dict(isin_ticker_data, isins)
 
-    for isin in isins:
-        ticker = isin_ticker_dict.get(isin)
-        dat = get_data_from_yahoo(ticker, period='1mo')
-        print(dat.head())
+    tickers = [isin_ticker_dict.get(isin) for isin in isins]
+        
+    download_data(tickers, interval='1d', period='10y')
+
     
     
 if __name__ == "__main__":
