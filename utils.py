@@ -18,7 +18,7 @@ def load_isin_ticker_data(path):
     """
     Load ISIN-Ticker table fron the csv dawnloaded from from the Xetra Exchange 
     """
-    data = pd.read_csv(path, sep=";", usecols=['ISIN', 'Mnemonic'])
+    data = pd.read_csv(path, sep=";", usecols=['isin', 'ticker'])
     return data
 
 def get_unique_isin(df):
@@ -63,7 +63,7 @@ class TwoWayDict:
     def populate_dict(self, df, isins):
         for isin in isins:
             # Trova il ticker corrispondente
-            result = df.loc[df['ISIN'] == isin, 'Mnemonic']
+            result = df.loc[df['isin'] == isin, 'ticker']
             if not result.empty:
                 ticker = result.iloc[0]  # Recupera il primo valore trovato
                 self.add(ticker, isin)
@@ -76,13 +76,13 @@ class TwoWayDict:
 
 
 
-def get_positions(df):
+def get_positions(df, isin_dict, data):
     df = df.dropna(subset=['isin'])
-    df.loc[:, 'type'] = df['type'].replace('Savings plan', 'Buy')    
+    df.loc[:, 'type'] = df['type'].replace('Savings plan', 'Buy')
     isins = get_unique_isin(df)
     isin_dict = isin_to_description(df)
-    positions = pd.DataFrame(columns=['ISIN', 'Description', 'Total Shares', 'Avg Price', 'Status'])
-    
+    positions = pd.DataFrame(columns=['ISIN', 'Ticker', 'Description', 'Total Shares', 'Last Price', 'Avg Buy Price', 'Avg Sell Price', 'Status', 'Profit'])
+
     for isin in isins:
         subDataFrame = df[df['isin'] == isin]
         total_shares = 0
@@ -90,6 +90,7 @@ def get_positions(df):
         total_buy_amount = 0
         total_sell_shares = 0
         total_sell_amount = 0
+
         for _, row in subDataFrame.iterrows():
             if row['type'] == 'Buy':
                 total_buy_shares += row['shares']
@@ -98,21 +99,53 @@ def get_positions(df):
                 total_sell_shares += row['shares']
                 total_sell_amount += row['amount']
             else:
-                raise('There is a problem in the "type" column')
-            
-        avg_buy_price = -total_buy_amount/total_buy_shares
-        avg_sell_price = total_sell_amount/total_sell_shares if total_sell_shares !=0 else 0
-        total_shares = total_buy_shares - total_sell_shares
-        profit, status = [abs(total_buy_amount + total_sell_amount), 'Sold'] if total_shares <= 0.1 else [0, 'Hodl']     
-        
-        description = isin_dict.get(isin, "ISIN non trovato")
-        newLine = {'ISIN':isin, 'Description':description, 'Total Shares':total_shares, 'Avg Buy Price':avg_buy_price,
-                   'Avg Sell Price':avg_sell_price, 'Status':status, 'Profit':profit}
-        positions = pd.concat([positions, pd.DataFrame([newLine])], ignore_index=True)
-        
-    #positions = positions[abs(positions['Total Shares']) >= 0.001]
+                raise ValueError('There is a problem in the "type" column')
 
+        avg_buy_price = -total_buy_amount/total_buy_shares
+        avg_sell_price = total_sell_amount/total_sell_shares if total_sell_shares != 0 else 0
+        total_shares = total_buy_shares - total_sell_shares
+        ticker = isin_dict.get(isin)
+
+        # Ensure the last price is a scalar
+        last_price = get_last_price(price_dict=data, ticker=ticker)
+        if last_price == 0.0:
+            print(f"Warning: No valid last price for ticker {ticker}. Setting to 0.")
+
+        # Calculate profit
+        if total_shares <= 0.1:
+            profit = abs(total_buy_amount + total_sell_amount)
+            status = 'Sold'
+        else:
+            profit = last_price * total_shares - abs(total_buy_amount + total_sell_amount)
+            status = 'Hodl'
+
+        newLine = {
+            'ISIN': isin,
+            'Ticker': ticker,
+            'Description': isin_dict.get(isin, "ISIN non trovato"),
+            'Total Shares': round(total_shares, 2),
+            'Last Price': round(last_price, 2),
+            'Avg Buy Price': round(avg_buy_price, 2),
+            'Avg Sell Price': round(avg_sell_price, 2),
+            'Status': status,
+            'Profit': round(profit, 2)
+        }
+
+        positions = pd.concat([positions, pd.DataFrame([newLine])], ignore_index=True)
     return positions
+
+def get_last_price(price_dict, ticker):
+    """
+    Get the last adjusted closing price for a given ticker from the price dictionary.
+    """
+    try:
+        return float(price_dict[ticker]['Adj Close'].iloc[-1])
+    except KeyError:
+        print(f"No data found for ticker: {ticker}")
+        return 0.0
+    except IndexError:
+        print(f"No valid price data for ticker: {ticker}")
+        return 0.0
     
 def format_table(df):
     # Formatta i numeri con separatori per migliaia e due cifre decimali
@@ -176,6 +209,28 @@ def get_data_from_yahoo(check, ticker, interval='1d', period='1y'):
         if new_data.empty:
             raise ValueError(f"Nessun dato trovato per {ticker}")
         return new_data
+    
+def download_and_store_data(tickers):
+    """
+    Downloads historical data for a list of tickers and stores it in a dictionary.
+
+    Args:
+        tickers: A list of stock/ETF tickers.
+
+    Returns:
+        A dictionary where keys are tickers and values are corresponding DataFrames.
+    """
+    data_dict = {}
+    for ticker in tickers:
+        try:
+            data = yf.download(ticker, start="2000-01-01", end="2024-12-01")
+            if not data.empty:
+                data_dict[ticker] = data
+            else:
+                print(f"No data found for {ticker}")
+        except Exception as e:
+            print(f"Error downloading data for {ticker}: {e}")
+        return data_dict
 
 def save_data_to_csv(df, path):
     """
