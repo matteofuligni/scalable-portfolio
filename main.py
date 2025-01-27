@@ -19,6 +19,7 @@ def main():
 
     all_data = download_and_store_data(tickers)
     position = get_positions(transaction_data, isin_ticker_dict, all_data)
+    print(position)
  
 if __name__ == "__main__":
     main()
